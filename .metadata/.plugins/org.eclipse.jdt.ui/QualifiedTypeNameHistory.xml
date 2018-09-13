@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="flybehavior.NormalFly"/>
+<fullyQualifiedTypeName name="quackbehavior.Quack"/>
+<fullyQualifiedTypeName name="flybehavior.FlyBehavior"/>
+<fullyQualifiedTypeName name="duck.Duck"/>
+<fullyQualifiedTypeName name="duck.mallard"/>
+<fullyQualifiedTypeName name="flybehavior.CannotFly"/>
+<fullyQualifiedTypeName name="quackbehavior.silence"/>
+<fullyQualifiedTypeName name="quackbehavior.QuackBehavior"/>
+<fullyQualifiedTypeName name="duck.RubberDuck"/>
+<fullyQualifiedTypeName name="quackbehavior.zhizhi"/>
+</qualifiedTypeNameHistroy>

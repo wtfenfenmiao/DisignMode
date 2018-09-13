@@ -1,0 +1,29 @@
+package duck;
+
+import quackbehavior.Quack;
+import quackbehavior.QuackBehavior;
+import flybehavior.FlyBehavior;
+import flybehavior.NormalFly;
+
+public class mallard extends Duck{
+	public void mallard()
+	{
+		flyBehavior=new NormalFly();
+		quackBehavior=new Quack();
+	}
+	
+	public void display()
+	{
+		System.out.println("I am mallard");
+	}
+	
+	public void changefly(FlyBehavior fb)
+	{
+		flyBehavior=fb;
+	}
+	
+	public void changefly(QuackBehavior qb)
+	{
+		quackBehavior=qb;
+	}
+}

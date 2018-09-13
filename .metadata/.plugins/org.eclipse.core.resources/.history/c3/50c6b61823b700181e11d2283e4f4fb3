@@ -1,0 +1,15 @@
+import duck.Duck;
+import duck.mallard;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		Duck amall=new mallard();
+		amall.swim();
+		amall.display();
+		amall.makesound();
+		amall.flying();
+	}
+
+}

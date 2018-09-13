@@ -1,0 +1,28 @@
+import quackbehavior.QuackBehavior;
+import quackbehavior.silence;
+import duck.Duck;
+import duck.RubberDuck;
+import duck.mallard;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		Duck amall=new mallard();
+		amall.swim();
+		amall.display();
+		amall.makesound();
+		amall.flying();
+		
+		QuackBehavior si=new silence();
+		amall.changequack(si);
+		amall.makesound();
+		
+		Duck xiaohuang=new RubberDuck();
+		xiaohuang.swim();
+		xiaohuang.display();
+		xiaohuang.makesound();
+		xiaohuang.flying();
+	}
+
+}
