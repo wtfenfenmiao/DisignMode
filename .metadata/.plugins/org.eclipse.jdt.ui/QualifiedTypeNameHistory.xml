@@ -10,4 +10,17 @@
 <fullyQualifiedTypeName name="quackbehavior.QuackBehavior"/>
 <fullyQualifiedTypeName name="duck.RubberDuck"/>
 <fullyQualifiedTypeName name="quackbehavior.zhizhi"/>
+<fullyQualifiedTypeName name="java.util.Observer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="observer.Observer"/>
+<fullyQualifiedTypeName name="subject.Subject"/>
+<fullyQualifiedTypeName name="subject.weatherData"/>
+<fullyQualifiedTypeName name="observer.panel1"/>
+<fullyQualifiedTypeName name="observer.panel2"/>
+<fullyQualifiedTypeName name="observer.panel3"/>
+<fullyQualifiedTypeName name="display.Display"/>
+<fullyQualifiedTypeName name="Subject.weatherData"/>
+<fullyQualifiedTypeName name="Observer.panel1"/>
+<fullyQualifiedTypeName name="Observer.panel2"/>
+<fullyQualifiedTypeName name="Observer.panel3"/>
 </qualifiedTypeNameHistroy>

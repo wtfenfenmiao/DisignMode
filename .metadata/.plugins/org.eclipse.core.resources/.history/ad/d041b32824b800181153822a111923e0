@@ -1,0 +1,13 @@
+package subject;
+
+import java.util.ArrayList;
+
+public class weatherData implements Subject{
+	public weatherData()
+	{
+		ArrayList observers=new ArrayList();
+	}
+	
+	
+
+}

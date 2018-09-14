@@ -1,0 +1,17 @@
+package observer;
+
+import display.Display;
+
+public class panel2 implements Observer,Display{
+	private int humidity;
+	public void update(int tempreture,int humidity,int sun)
+	{
+		this.humidity=humidity;
+		display();
+	}
+	public void display()
+	{
+		System.out.println("this is panel2!");
+		System.out.println("the humidity is "+humidity);
+	}
+}

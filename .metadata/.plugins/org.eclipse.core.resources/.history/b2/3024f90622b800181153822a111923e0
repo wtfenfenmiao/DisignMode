@@ -1,0 +1,7 @@
+//alone,lonely
+
+package subject;
+
+public interface Subject {
+	
+}

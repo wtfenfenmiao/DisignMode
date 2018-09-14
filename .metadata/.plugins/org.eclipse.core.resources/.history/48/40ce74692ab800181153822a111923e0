@@ -1,0 +1,12 @@
+package Observer;
+
+import java.util.Observer;
+
+public class panel1 implements Observer{
+	private
+	
+	public void update(Observerble ob)
+	{
+		
+	}
+}

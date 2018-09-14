@@ -1,0 +1,40 @@
+package Subject;
+
+import java.util.Observable;
+
+public class weatherData extends Observable{
+	private int tempreture;
+	private int humidity;
+	private int sun;
+	
+	
+	public void dataChanged()
+	{
+		setChanged();
+		notifyObservers();   //这里是空的就是“拉”，否则就是“推”
+	}
+	
+	public void getData(int tempreture,int humidity,int sun)
+	{
+		this.tempreture=tempreture;
+		this.humidity=humidity;
+		this.sun=sun;
+		dataChanged();
+	}
+	
+	public int gettemp()
+	{
+		return tempreture;
+	}
+	
+	public int gethum()
+	{
+		return humidity;
+	}
+	
+	public int getsun()
+	{
+		return sun;
+	}
+
+}
