@@ -1,0 +1,15 @@
+package decorator;
+
+import supertype.Decorator;
+
+public class milk extends Decorator{
+	public milk()
+	{
+		description=Beverage.description+",milk";
+	}
+	
+	public double cost()
+	{
+		return Beverage.cost()+2.0;
+	}
+}

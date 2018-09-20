@@ -1,8 +1,0 @@
-package behavior;
-
-public class NormalFly implement FlyBehavior{
-	public void fly()
-	{
-		System.out.println("I can fly normally!");
-	}
-}

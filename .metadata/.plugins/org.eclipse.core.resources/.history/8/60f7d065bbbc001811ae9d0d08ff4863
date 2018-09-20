@@ -1,0 +1,14 @@
+package decorated;
+
+import supertype.beverage;
+
+public class tea extends beverage{
+	public tea()
+	{
+		description="coffee";
+	}
+	public double cost()
+	{
+		return 1.99;
+	}
+}

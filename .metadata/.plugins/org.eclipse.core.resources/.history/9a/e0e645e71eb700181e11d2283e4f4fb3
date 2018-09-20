@@ -1,5 +1,0 @@
-package flybehavior;
-
-public interface QuackBehavior {
-		public void quack();
-}

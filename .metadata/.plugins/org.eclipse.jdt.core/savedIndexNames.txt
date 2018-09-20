@@ -1,2 +1,1 @@
 INDEX VERSION 1.127+E:\DisignMode\.metadata\.plugins\org.eclipse.jdt.core
-2262377617.index

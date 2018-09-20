@@ -23,4 +23,11 @@
 <fullyQualifiedTypeName name="Observer.panel1"/>
 <fullyQualifiedTypeName name="Observer.panel2"/>
 <fullyQualifiedTypeName name="Observer.panel3"/>
+<fullyQualifiedTypeName name="supertype.Decorator"/>
+<fullyQualifiedTypeName name="decorated.tea"/>
+<fullyQualifiedTypeName name="decorated.coffee"/>
+<fullyQualifiedTypeName name="decorator.milk"/>
+<fullyQualifiedTypeName name="decorator.sugar"/>
+<fullyQualifiedTypeName name="supertype.beverage"/>
+<fullyQualifiedTypeName name="supertype.decorator"/>
 </qualifiedTypeNameHistroy>

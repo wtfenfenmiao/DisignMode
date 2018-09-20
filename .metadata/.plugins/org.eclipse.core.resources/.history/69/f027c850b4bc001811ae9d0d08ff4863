@@ -1,0 +1,10 @@
+package supertype;
+
+public abstract class beverage {
+	String description="unknown beverage";
+	public String getDescription()
+	{
+		return description;
+	}
+	public abstract void cost();
+}

@@ -1,6 +1,6 @@
-import observer.panel1;
-import observer.panel2;
-import observer.panel3;
+import panel_observer.panel1;
+import panel_observer.panel2;
+import panel_observer.panel3;
 import subject.weatherData;
 
 

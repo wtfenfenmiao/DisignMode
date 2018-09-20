@@ -10,7 +10,7 @@ public class weatherData extends Observable{
 	
 	public void dataChanged()
 	{
-		setChanged();
+		setChanged();    //这个东西要加的。可以控制改变的频率等等。不加这个subject的数据变了，也传不出去
 		notifyObservers();   //这里是空的就是“拉”
 		
 		//notifyObservers(tempreture);  
