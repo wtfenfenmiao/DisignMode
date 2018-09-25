@@ -30,4 +30,8 @@
 <fullyQualifiedTypeName name="decorator.sugar"/>
 <fullyQualifiedTypeName name="supertype.beverage"/>
 <fullyQualifiedTypeName name="supertype.decorator"/>
+<fullyQualifiedTypeName name="singleton_class.singleton1"/>
+<fullyQualifiedTypeName name="singleton_class.singleton2"/>
+<fullyQualifiedTypeName name="singleton_class.singleton3"/>
+<fullyQualifiedTypeName name="singleton_class.singleton4"/>
 </qualifiedTypeNameHistroy>
