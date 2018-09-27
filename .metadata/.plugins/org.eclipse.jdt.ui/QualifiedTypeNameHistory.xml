@@ -34,4 +34,16 @@
 <fullyQualifiedTypeName name="singleton_class.singleton2"/>
 <fullyQualifiedTypeName name="singleton_class.singleton3"/>
 <fullyQualifiedTypeName name="singleton_class.singleton4"/>
+<fullyQualifiedTypeName name="furniture.light"/>
+<fullyQualifiedTypeName name="furniture.fan"/>
+<fullyQualifiedTypeName name="furniture.gramophone"/>
+<fullyQualifiedTypeName name="command.lightOnCommand"/>
+<fullyQualifiedTypeName name="command.lightOffCommand"/>
+<fullyQualifiedTypeName name="command.fanUpCommand"/>
+<fullyQualifiedTypeName name="command.fanDownCommand"/>
+<fullyQualifiedTypeName name="command.gramophoneOnCommand"/>
+<fullyQualifiedTypeName name="command.gramophoneOffCommand"/>
+<fullyQualifiedTypeName name="command.noCommand"/>
+<fullyQualifiedTypeName name="command.partyCommand"/>
+<fullyQualifiedTypeName name="command.command"/>
 </qualifiedTypeNameHistroy>

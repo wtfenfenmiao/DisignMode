@@ -1,0 +1,67 @@
+import java.util.Stack;
+
+import command.command;
+import command.noCommand;
+import command.partyCommand;
+
+//这个是所谓的，调用者
+public class remoteControl {
+	private command[] onCommand;
+	private command[] offCommand;
+	private noCommand noComm;
+	private command partyComOn;
+	private command partyComOff;
+	private Stack<command> lastCommand;
+	public remoteControl()
+	{
+		onCommand=new command[7];
+		offCommand=new command[7];
+		noComm=new noCommand();
+		partyComOn=new partyCommand(onCommand);
+		partyComOff=new partyCommand(offCommand);
+		for(int i=0;i<7;++i)
+		{
+			onCommand[i]=noComm;
+			offCommand[i]=noComm;
+		}
+	}
+	public void setCommand(int slot,command onCom,command offCom)
+	{
+		onCommand[slot]=onCom;
+		offCommand[slot]=offCom;
+	}
+	public void slotOn(int slot)
+	{
+		onCommand[slot].excute();
+		lastCommand.push(onCommand[slot]);
+	}
+	
+	public void slotOff(int slot)
+	{
+		offCommand[slot].excute();
+		lastCommand.push(offCommand[slot]);
+	}
+	
+	public void undoPress()   
+	{
+		if(!lastCommand.empty())
+		{
+			command temp=lastCommand.pop();
+			temp.undo();
+		}
+	}
+	
+	
+	public String toString()
+	{
+		StringBuffer re=new StringBuffer();
+		re.append("--state--\n");
+		for(int i=0;i<7;++i)
+		{
+			re.append("slot "+i+":"+onCommand.getClass().getName()+" "+offCommand.getClass().getName()+"\n");
+		}
+		return re.toString();
+	}
+	
+	
+}

@@ -1,0 +1,41 @@
+package furniture;
+
+public class fan {
+	private String location;
+	private final int HIGH=5;
+	private final int MEDIUM=3;
+	private final int LOW=1;
+	private final int OFF=0;
+	int speed;
+	public fan(String location)
+	{
+		this.location=location;
+	}
+	public void high()
+	{
+		speed=HIGH;
+		this.printSpeed();
+	}
+	public void medium()
+	{
+		speed=MEDIUM;
+	}
+	public void low()
+	{
+		speed=LOW;
+	}
+	public void off()
+	{
+		speed=OFF;
+	}
+	public void printSpeed()
+	{
+		System.out.println("the fan in "+location+" has speed "+speed);
+	}
+	
+	public int getSpeed()
+	{
+		return speed;
+	}
+	
+}

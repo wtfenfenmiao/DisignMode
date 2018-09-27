@@ -1,5 +1,0 @@
-package supertype;
-
-public abstract class decorator extends beverage{
-	public abstract String getDescription();
-}
