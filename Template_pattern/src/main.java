@@ -1,0 +1,34 @@
+import java.util.Arrays;
+
+import coffine.Coffee;
+import coffine.Tea;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Duck[] duckArr={new Duck("Daffy",8),new Duck("Dewey",2),new Duck("Howard",7),new Duck("Louie",2),new Duck("Donald",10),new Duck("Huey",2)};
+		display(duckArr);		
+		Arrays.sort(duckArr);		
+		display(duckArr);
+		Tea tea=new Tea();
+		Coffee coffee=new Coffee();
+		tea.makeDrink();
+		coffee.makeDrink();
+		
+	}
+	
+	
+	
+	public static void display(Duck[] duckArr)
+	{
+		System.out.println("\n");
+		for(int i=0;i<duckArr.length;++i)
+		{
+			System.out.println(duckArr[i]);
+		}
+		System.out.println("\n");
+	}
+
+}
