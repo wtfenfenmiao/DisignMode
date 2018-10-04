@@ -1,0 +1,67 @@
+package menuComponent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import componentIterator.componentIterator;
+
+
+
+public class menu extends menuComponent{
+	String name;
+	String description;
+	ArrayList menuItems;
+	
+	public menu(String name,String description)
+	{
+		menuItems=new ArrayList();
+		this.name=name;
+		this.description=description;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public void print()
+	{
+		/*
+		System.out.println();
+		System.out.print(getName());
+		System.out.print(",");
+		System.out.println(getDescription());
+		Iterator it=menuItems.iterator();
+		while(it.hasNext())
+		{
+			menuComponent co=(menuComponent)it.next();
+			co.print();
+		}
+		System.out.println();
+		*/
+		System.out.println();
+		System.out.print(getName());
+		System.out.print(",");
+		System.out.println(getDescription());
+	}
+	
+	public void add(menuComponent component)
+	{
+		menuItems.add(component);
+	}
+	
+	public menuComponent getChild(int i)
+	{
+		return (menuComponent)menuItems.get(i);
+	}
+	
+	public Iterator createIterator()
+	{
+		return (Iterator)(new componentIterator(menuItems.iterator()));
+	}
+}

@@ -1,0 +1,53 @@
+package componentIterator;
+
+import java.util.Iterator;
+import java.util.Stack;
+
+import menuComponent.menuComponent;
+
+public class componentIterator implements Iterator{
+
+	Stack st;
+	
+	public componentIterator(Iterator menuIterator)
+	{
+		st=new Stack();
+		st.push(menuIterator);
+	}
+
+	public boolean hasNext() {
+		if(st.empty())
+		{
+			return false;
+		}
+		else
+		{
+			Iterator it=(Iterator)st.peek();
+			if(!it.hasNext())
+			{
+				st.pop();
+				return hasNext();
+			}
+			else
+				return true;
+		}
+	}
+
+	@Override
+	public Object next() {
+		if(st.empty())
+			return null;
+		else
+		{
+			Iterator it=(Iterator)st.peek();
+			if(it.hasNext())
+			{
+				menuComponent me=(menuComponent)it.next();
+				st.push();
+			}
+				
+			
+		}
+	}
+
+}

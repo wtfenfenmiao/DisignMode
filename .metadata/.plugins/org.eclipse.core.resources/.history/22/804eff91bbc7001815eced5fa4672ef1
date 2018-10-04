@@ -1,0 +1,36 @@
+package menuComponent;
+
+import java.util.ArrayList;
+
+public class menu extends menuComponent{
+	String name;
+	String description;
+	ArrayList menuItems;
+	
+	public menu(String name,String description)
+	{
+		menuItems=new ArrayList();
+		this.name=name;
+		this.description=description;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public void add(menuComponent component)
+	{
+		menuItems.add(component);
+	}
+	
+	public menuComponent getChild(int i)
+	{
+		return (menuComponent)menuItems.get(i);
+	}
+}

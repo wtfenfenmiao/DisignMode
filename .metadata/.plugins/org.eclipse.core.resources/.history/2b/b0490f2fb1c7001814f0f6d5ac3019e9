@@ -1,0 +1,22 @@
+package breakfirst;
+
+import iterator_pattern.menuItem;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import menu.menu;
+
+public class pancakeMenu implements menu{
+	ArrayList menuItems;
+	
+	
+	
+	
+
+	public Iterator createrIterator() {
+		// TODO Auto-generated method stub
+		return new breakfirstIterator(menuItems);
+	}
+
+}

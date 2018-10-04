@@ -1,0 +1,49 @@
+package waitress;
+
+import iterator_pattern.menuItem;
+
+import java.util.ArrayList;
+
+
+import java.util.Iterator;
+
+import menu.menu;
+
+public class waitress {
+	ArrayList menuList;
+	
+	public waitress(menu breakfirst,menu lunch)
+	{
+		menuList.add(breakfirst);
+		menuList.add(lunch);
+	}
+	
+	public void addMenu(menu me)
+	{
+		menuList.add(me);
+	}
+	
+	public void printMenu()
+	{
+		for(Object me:menuList)
+		{
+			System.out.println();
+			Iterator it=((menu)me).createrIterator();
+			printIterator(it);
+			System.out.println();
+		}
+	}
+	
+	public void printIterator(Iterator it)
+	{
+		while(it.hasNext())
+		{
+			menuItem me=(menuItem)it.next();
+			System.out.println(me.getDescription());
+			System.out.println(me.getDescription());
+			
+		}
+	}
+	
+
+}

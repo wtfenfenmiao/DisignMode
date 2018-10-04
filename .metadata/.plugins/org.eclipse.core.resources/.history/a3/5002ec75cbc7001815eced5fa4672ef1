@@ -1,0 +1,63 @@
+package componentIterator;
+import java.util.Iterator;
+import java.util.Stack;
+
+import menuComponent.menu;
+import menuComponent.menuComponent;
+import menuComponent.menuItem;
+
+
+
+public class componentIterator implements Iterator{
+	Stack st;
+	
+	public componentIterator(Iterator iter)
+	{
+		st=new Stack();
+		st.push(iter);
+	}
+
+	public boolean hasNext() {
+		if(st.empty())
+			return false;
+		else
+		{
+			Iterator it=(Iterator)st.peek();
+			if(!it.hasNext())
+			{
+				st.pop();
+				return hasNext();
+			}
+			else
+				return true;
+		}
+	}
+
+
+	public Object next() {
+		if(hasNext())
+		{
+			Iterator it=(Iterator)st.peek();
+			menuComponent me=(menuComponent)it.next();
+			
+			if(me instanceof menu)
+			{
+				Iterator iter=me.createIterator();
+				st.push(iter);
+				System.out.println("push "+me.getName());
+			}				                                                                
+			return me;
+		}
+		else
+			return null;
+	}
+	
+	public void bianli()
+	{
+		for(menuComponent x:st)
+		{
+			
+		}
+	}
+	
+}

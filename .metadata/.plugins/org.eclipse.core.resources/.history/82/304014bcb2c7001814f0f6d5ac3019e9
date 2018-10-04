@@ -1,0 +1,36 @@
+package lunch;
+
+import iterator_pattern.menuItem;
+
+import java.util.Iterator;
+
+import menu.menu;
+
+public class lunchMenu implements menu{
+	static final int MAX_ITEMS=7;
+	menuItem[] menuItems;
+	int position=0;
+	
+	public lunchMenu()
+	{
+		menuItems=new menuItem[MAX_ITEMS];  //午饭最多七种菜
+		addMenu();
+	}
+	
+	public void addMenu(String name,String description,boolean vegaterian,double price)
+	{
+		if(position>=7)
+		{
+			System.out.println("午餐最多七种菜！");
+			return;
+		}
+		menuItem me=new menuItem(name,description,vegaterian,price);
+		menuItems[position++]=me;
+	}
+	
+	
+	public Iterator createrIterator() {
+		return new lunchIterator(menuItems);
+	}
+
+}

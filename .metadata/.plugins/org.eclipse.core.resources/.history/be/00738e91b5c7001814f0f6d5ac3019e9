@@ -1,0 +1,36 @@
+package iterator_pattern;
+
+public class menuItem {
+	String name;
+	String description;
+	boolean vegaterian;
+	double price;
+	
+	public menuItem(String name,String description,boolean vegaterian,double price)
+	{
+		this.name=name;
+		this.description=description;
+		this.vegaterian=vegaterian;
+		this.price=price;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public boolean getVegaterian()
+	{
+		return vegaterian;
+	}
+	
+	public double price()
+	{
+		return price;
+	}
+}

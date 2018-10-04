@@ -1,0 +1,7 @@
+package breakfirst;
+
+import menu.menu;
+
+public class pancakeMenu implements menu{
+
+}

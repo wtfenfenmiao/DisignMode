@@ -1,0 +1,30 @@
+package waitress;
+
+import java.util.ArrayList;
+
+import menu.menu;
+
+public class waitress {
+	ArrayList menuList;
+	
+	public waitress(menu breakfirst,menu lunch)
+	{
+		menuList.add(breakfirst);
+		menuList.add(lunch);
+	}
+	
+	public void addMenu(menu me)
+	{
+		menuList.add(me);
+	}
+	
+	public void printMenu()
+	{
+		for(menu me:menuList)
+		{
+			
+		}
+	}
+	
+
+}

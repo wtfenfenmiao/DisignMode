@@ -1,0 +1,13 @@
+import menuComponent.menu;
+import menuComponent.menuComponent;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		menuComponent breakfirst=new menu("breakfirst","menu");
+		menuComponent lunch=new menu("lunch","menu");
+
+	}
+
+}

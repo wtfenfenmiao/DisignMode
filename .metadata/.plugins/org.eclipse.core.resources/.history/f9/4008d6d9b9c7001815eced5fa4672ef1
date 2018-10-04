@@ -1,0 +1,23 @@
+package menuComponent;
+
+public class menuComponent {
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public boolean getVegaterian()
+	{
+		return vegaterian;
+	}
+	
+	public double getPrice()
+	{
+		return price;
+	}
+}

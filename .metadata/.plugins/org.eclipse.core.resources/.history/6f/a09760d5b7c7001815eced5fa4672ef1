@@ -1,0 +1,33 @@
+package dinner;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+
+import menu.menu;
+import menuItem.menuItem;
+
+public class dinnerMenu implements menu{
+	HashMap menuItems;
+	
+	public dinnerMenu()
+	{
+		menuItems=new HashMap();
+		addItem();
+	}
+	
+	public void addItem(String name,String description,boolean vegaterian,double price)
+	{
+		menuItem me=new menuItem(name,description,vegaterian,price);
+		menuItems.put(name,me);
+	}
+	
+	
+	
+
+	public Iterator createrIterator() {
+		// TODO Auto-generated method stub
+		return menuItems.values().iterator();
+	}
+
+}

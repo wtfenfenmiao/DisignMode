@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="flybehavior.NormalFly"/>
-<fullyQualifiedTypeName name="quackbehavior.Quack"/>
-<fullyQualifiedTypeName name="flybehavior.FlyBehavior"/>
-<fullyQualifiedTypeName name="duck.Duck"/>
-<fullyQualifiedTypeName name="duck.mallard"/>
-<fullyQualifiedTypeName name="flybehavior.CannotFly"/>
-<fullyQualifiedTypeName name="quackbehavior.silence"/>
-<fullyQualifiedTypeName name="quackbehavior.QuackBehavior"/>
 <fullyQualifiedTypeName name="duck.RubberDuck"/>
 <fullyQualifiedTypeName name="quackbehavior.zhizhi"/>
 <fullyQualifiedTypeName name="java.util.Observer"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="observer.Observer"/>
 <fullyQualifiedTypeName name="subject.Subject"/>
 <fullyQualifiedTypeName name="subject.weatherData"/>
@@ -52,4 +43,21 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="coffine.Tea"/>
 <fullyQualifiedTypeName name="coffine.Coffee"/>
+<fullyQualifiedTypeName name="iterator_pattern.menuItem"/>
+<fullyQualifiedTypeName name="breakfirst.pancakeMenu"/>
+<fullyQualifiedTypeName name="lunch.lunchMenu"/>
+<fullyQualifiedTypeName name="menu.menu"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="menuItem.menuItem"/>
+<fullyQualifiedTypeName name="dinner.caffeeMenu"/>
+<fullyQualifiedTypeName name="componentIterator.nullIterator"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="componentIterator.componentIterator"/>
+<fullyQualifiedTypeName name="menuComponent.menuComponent"/>
+<fullyQualifiedTypeName name="waitress.waitress"/>
+<fullyQualifiedTypeName name="menuComponent.menu"/>
+<fullyQualifiedTypeName name="menuComponent.menuItem"/>
 </qualifiedTypeNameHistroy>

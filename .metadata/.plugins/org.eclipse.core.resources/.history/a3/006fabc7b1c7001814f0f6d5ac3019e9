@@ -1,0 +1,24 @@
+package breakfirst;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class breakfirstIterator implements Iterator{
+	ArrayList menuItems;
+	int position=0;
+	
+	public breakfirstIterator(ArrayList menuItems)
+	{
+		this.menuItems=menuItems;
+	}
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

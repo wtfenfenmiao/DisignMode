@@ -1,0 +1,37 @@
+import java.util.Iterator;
+import java.util.Stack;
+
+
+
+public class componentIterator implements Iterator{
+	Stack st;
+	
+	public componentIterator(Iterator iter)
+	{
+		st=new Stack();
+		st.push(iter);
+	}
+
+	public boolean hasNext() {
+		if(st.empty())
+			return false;
+		else
+		{
+			Iterator it=(Iterator)st.peek();
+			if(!it.hasNext())
+			{
+				st.pop();
+				hasNext();
+			}
+			else
+				return true;
+		}
+	}
+
+
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

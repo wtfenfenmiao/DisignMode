@@ -1,0 +1,32 @@
+package waitress;
+
+import java.util.ArrayList;
+
+
+
+import java.util.Iterator;
+
+import menuComponent.menuComponent;
+
+public class waitress {
+	ArrayList menu;
+	public waitress(ArrayList menu)
+	{
+		this.menu=menu;
+	}
+	
+	public void print()
+	{
+		Iterator it=menu.iterator();
+		while(it.hasNext())
+		{
+			menuComponent menu=(menuComponent)it.next();
+			menu.print();
+		}
+	}
+	
+	public void printVeg()
+	{
+		
+	}
+}

@@ -1,0 +1,40 @@
+package waitress;
+
+import java.util.ArrayList;
+
+
+
+import java.util.Iterator;
+
+import componentIterator.componentIterator;
+import menuComponent.menuComponent;
+
+public class waitress {
+	menuComponent menu;
+	public waitress(menuComponent menu)
+	{
+		this.menu=menu;
+	}
+	
+	public void print()
+	{
+		menu.print();
+	}
+	
+	public void printVeg()
+	{
+		Iterator it=menu.createIterator();
+		while(it.hasNext())
+		{
+			menuComponent me=(menuComponent)it.next();
+			try{
+				if(me.getVegaterian())
+				{
+					me.print();
+				}
+					
+			}catch(UnsupportedOperationException e){System.out.println("err!"+me.getName());}
+		}
+	}
+	
+}
