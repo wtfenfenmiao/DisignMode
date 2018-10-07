@@ -1,0 +1,28 @@
+package quackable;
+
+import java.util.ArrayList;
+
+public class observable implements quackObservable{
+
+	ArrayList observers;
+	quackObservable duck;
+	
+	public observable(quackObservable duck)
+	{
+		this.duck=duck;
+		observers=new ArrayList();
+	}
+
+	public void addObserver(observer ob) {
+		
+		
+	}
+
+
+	public void noticeObserver() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

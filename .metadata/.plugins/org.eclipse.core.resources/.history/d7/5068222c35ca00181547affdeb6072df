@@ -1,0 +1,22 @@
+package duck;
+
+import quackable.observer;
+import quackable.quackable;
+
+public class woodenDuck implements quackable{
+	public void quack() {
+		System.out.println("bang");	
+	}
+	
+	
+	@Override
+	public void addObserver(observer ob) {
+		obs.addObserver(ob);
+		
+	}
+
+	@Override
+	public void noticeObserver() {
+		obs.noticeObserver();
+	}
+}

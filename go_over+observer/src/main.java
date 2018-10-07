@@ -15,11 +15,12 @@ import quackable.quackable;
 public class main {
 
 	public static void main(String[] args) {
+		/*
 		quackable malla=new mallard();
 		quackable rubber=new RubberDuck();
 		quackable woodDuck=new woodenDuck();
 		quackable fakeDuck=new gooseAdapter(new goose());
-		/*
+		
 		quackable mallaDecorator=new duckDecorator(malla);
 		quackable rubberDecorator=new duckDecorator(rubber);
 		quackable woodDuckDecorator=new duckDecorator(woodDuck);
@@ -30,27 +31,22 @@ public class main {
 		simulate(rubber);
 		simulate(woodDuck);
 		simulate(fakeDuck);
+		 */
 		abstractFactory factory=new DecoratorFactory();
 		quackable malla=factory.createMallard();
 		quackable rubber=factory.createRubberDuck();
 		quackable woodDuck=factory.createwoodenDuck();
 		quackable fakeDuck=factory.createfakeDuck();
-		*/
-		
-		/*
 		observer John=new artist();
 		malla.addObserver(John);
 		rubber.addObserver(John);
 		woodDuck.addObserver(John);
 		fakeDuck.addObserver(John);
-		*/
-		/*
 		simulate(malla);
 		simulate(rubber);
 		simulate(woodDuck);
 		simulate(fakeDuck);
-		*/
-		//System.out.println(duckDecorator.getCount());
+		System.out.println(duckDecorator.getCount());
 		
 		
 		quackable malla1=new mallard();
@@ -69,20 +65,10 @@ public class main {
 		flockall.add(woodDuck2);
 		flockall.add(fakeDuck2);
 		
-		flockall.quack();
-		
-		observer John=new artist();
-		flockmall.addObserver(John);
-		rubber2.addObserver(John);
-		woodDuck2.addObserver(John);
-		fakeDuck2.addObserver(John);
 		flockall.addObserver(John);
 		
-		flockall.notifyObserver();
-		System.out.println();
-		flockmall.notifyObserver();
-		System.out.println();
-		rubber2.notifyObserver();
+		flockall.quack();
+		
 		
 		
 		
@@ -92,7 +78,6 @@ public class main {
 	static public void simulate(quackable duck)
 	{
 		duck.quack();
-		duck.notifyObserver();
 	}
 
 }

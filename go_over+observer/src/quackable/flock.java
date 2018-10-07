@@ -2,7 +2,6 @@ package quackable;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Observer;
 
 
 
@@ -27,7 +26,7 @@ public class flock implements quackable{
 			qua.quack();
 		}
 	}
-	
+
 	@Override
 	public void addObserver(observer ob) {
 		Iterator it=ducklist.iterator();
@@ -40,15 +39,8 @@ public class flock implements quackable{
 	}
 
 	@Override
-	public void notifyObserver() {
-		/*
-		Iterator it=ducklist.iterator();
-		while(it.hasNext())
-		{
-			quackable qua=(quackable)it.next();
-			qua.notifyObserver();
-		}
-		*/
+	public void noticeObserver() {
+		// TODO Auto-generated method stub
 		
 	}
 }

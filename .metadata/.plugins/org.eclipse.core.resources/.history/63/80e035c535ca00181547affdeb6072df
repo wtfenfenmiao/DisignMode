@@ -1,0 +1,31 @@
+package duck;
+
+import quackable.observable;
+import quackable.observer;
+import quackable.quackable;
+
+public class mallard implements quackable{
+	observable obs;
+	public mallard()
+	{
+		obs=new observable(this);
+	}
+	
+	public void quack() {
+		System.out.println("quack");
+		
+	}
+
+	@Override
+	public void addObserver(observer ob) {
+		obs.addObserver(ob);
+		
+	}
+
+	@Override
+	public void noticeObserver() {
+		obs.noticeObserver();
+		
+	}
+
+}
