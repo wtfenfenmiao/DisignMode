@@ -1,0 +1,10 @@
+package client;
+
+public class mallard implements duck{
+
+	public void quack() {
+		System.out.println("quack!");
+		
+	}
+
+}

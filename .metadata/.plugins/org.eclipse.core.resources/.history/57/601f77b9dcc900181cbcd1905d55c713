@@ -1,0 +1,20 @@
+import adapter.gooseToDuckAdapter;
+import client.duck;
+import client.mallard;
+import exist.Domestic_goose;
+import exist.goose;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		duck BobDuck=new mallard();
+		goose LiliGoose=new Domestic_goose();
+		BobDuck.quack();
+		LiliGoose.gugu();
+		duck fakeDuck=new gooseToDuckAdapter(new Domestic_goose());
+		fakeDuck.quack();
+
+	}
+
+}

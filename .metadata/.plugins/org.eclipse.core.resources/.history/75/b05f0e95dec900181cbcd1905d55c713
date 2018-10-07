@@ -1,0 +1,5 @@
+package home_theatre;
+
+public interface home_theatre {
+
+}

@@ -1,0 +1,21 @@
+package home_theatre;
+
+public abstract class home_theatre {
+	public void open()
+	{
+		System.out.println("open");
+	}
+	
+	public abstract void putCD();
+	
+	public void play()
+	{
+		System.out.println("close");
+	}
+	
+	public void close()
+	{
+		System.out.println("close");
+	}
+	
+}

@@ -1,0 +1,55 @@
+package quackable;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Observer;
+
+
+
+public class flock implements quackable{
+	ArrayList obs;
+	ArrayList ducklist;
+	public flock()
+	{
+		ducklist=new ArrayList();
+		obs=new ArrayList();
+	}
+	
+	public void add(quackable qua)
+	{
+		ducklist.add(qua);
+		obs.add(new observable(qua));
+	}
+	
+	public void quack()
+	{
+		Iterator it=ducklist.iterator();
+		while(it.hasNext())
+		{
+			quackable qua=(quackable)it.next();
+			qua.quack();
+		}
+	}
+	
+	@Override
+	public void addObserver(Observer ob) {
+		Iterator it=obs.iterator();
+		while(it.hasNext())
+		{
+			observable obss=(observable)it.next();
+			obss.addObserver(ob);
+		}
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		Iterator it=obs.iterator();
+		while(it.hasNext())
+		{
+			observable obss=(observable)it.next();
+			obss.notifyObserver();
+		}
+		
+	}
+}

@@ -1,0 +1,14 @@
+
+
+public class main {
+
+	public static void main(String[] args) {
+		home_theatre the=new home_theatre();
+		facade controller=new facade(the);
+		controller.open();
+		controller.close();
+		
+
+	}
+
+}

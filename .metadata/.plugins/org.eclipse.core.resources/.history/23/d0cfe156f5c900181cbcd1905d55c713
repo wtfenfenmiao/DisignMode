@@ -1,0 +1,41 @@
+package gooseAdapter;
+
+import java.util.Observer;
+
+import goose.goose;
+import quackable.observable;
+import quackable.observer;
+import quackable.quackable;
+
+public class gooseAdapter implements quackable{
+	observable obs;
+	public gooseAdapter()
+	{
+		obs=new observable(this);
+	}
+	
+	goose goo;
+	public gooseAdapter(goose goo)
+	{
+		this.goo=goo;
+	}
+	public void quack() {
+		goo.gugu();
+		
+	}
+	
+	@Override
+	public void addObserver(observer ob) {
+		obs.addObserver(ob);
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		obs.notifyObserver();
+		
+	}
+	
+	
+
+}

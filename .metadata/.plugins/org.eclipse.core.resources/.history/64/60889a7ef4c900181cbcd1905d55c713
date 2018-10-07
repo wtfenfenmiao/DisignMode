@@ -1,0 +1,41 @@
+package decorator;
+
+import java.util.Observer;
+
+import quackable.observable;
+import quackable.quackable;
+
+public class duckDecorator implements quackable{
+	quackable qua;
+	static int count=0;
+	observable obs;
+	public duckDecorator(quackable qua)
+	{
+		this.qua=qua;
+		obs=new observable(this);
+	}
+	
+	public void quack()
+	{
+		qua.quack();
+		++count;
+	}
+	
+	static public int getCount()
+	{
+		return count;
+	}
+
+	@Override
+	public void addObserver(Observer ob) {
+		obs.addObserver(ob);
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		obs.notifyObserver();
+		
+	}
+
+}

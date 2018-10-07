@@ -1,0 +1,5 @@
+package quackable;
+
+public interface quackable extends observable{
+	public void quack();
+}

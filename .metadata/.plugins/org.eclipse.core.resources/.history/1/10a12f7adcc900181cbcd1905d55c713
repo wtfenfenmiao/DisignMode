@@ -1,0 +1,11 @@
+package exist;
+
+public class Domestic_goose implements goose{
+
+
+	public void gugu() {
+		System.out.println("Domestic_goose gugu!");
+		
+	}
+
+}

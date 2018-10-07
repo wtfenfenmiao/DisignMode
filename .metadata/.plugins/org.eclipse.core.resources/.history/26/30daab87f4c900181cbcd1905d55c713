@@ -1,0 +1,31 @@
+package duck;
+
+import java.util.Observer;
+
+import quackable.observable;
+import quackable.quackable;
+
+public class RubberDuck implements quackable{
+	observable obs;
+	public RubberDuck()
+	{
+		obs=new observable(this);
+	}
+	
+	public void quack() {
+		System.out.println("rubber");	
+	}
+	
+	
+	@Override
+	public void addObserver(Observer ob) {
+		obs.addObserver(ob);
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		obs.notifyObserver();
+		
+	}
+}

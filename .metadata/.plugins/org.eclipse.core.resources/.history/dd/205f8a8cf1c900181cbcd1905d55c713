@@ -1,0 +1,32 @@
+package duck;
+
+import java.util.Observer;
+
+import quackable.observable;
+import quackable.quackable;
+
+public class mallard implements quackable{
+	observable obs;
+	public mallard()
+	{
+		obs=new observable(this);
+	}
+	
+	public void quack() {
+		System.out.println("quack");
+		
+	}
+
+	@Override
+	public void addObserver(Observer ob) {
+		
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
